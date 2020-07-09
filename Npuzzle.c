@@ -403,11 +403,11 @@ int main()
     // int start[] = {7,9,13,1,14,16,8,15,3,6,10,5,2,11,12,4}; // 58 moves
     // int start[] = {15,14,1,6,9,11,4,12,16,10,7,3,13,8,5,2}; // 52 moves
     // int start[] = {7,14,16,9,10,2,11,13,6,15,4,12,5,1,8,3}; // 54 moves
-    int arrlen = *(&start + 1) - start;
+    const int arrlen = *(&start + 1) - start;
     #define BOARD_SIZE arrlen
     assert(isSolvable(start,BOARD_SIZE) == 1);
     // initilaise goal array based on input length
-    int goal[arrlen];
+    int goal[BOARD_SIZE];
     for (int i=0; i<arrlen; i++){
         goal[i] = i+1;
     }
