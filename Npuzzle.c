@@ -397,12 +397,12 @@ int main()
     // int start[] = {1,9,2,4,5,3,7,8,6}; // 4 moves
     // int start[] = {6,5,4,1,7,3,9,8,2}; // 26 moves
     // int start[] = {8,6,7,2,5,4,3,9,1}; // 31 moves
-    // int start[] = {6,4,7,8,5,9,3,2,1}; // 31 moves
+    int start[] = {6,4,7,8,5,9,3,2,1}; // 31 moves
     // int start[] = {5,1,2,3,6,16,7,4,9,10,11,8,13,14,15,12}; // 8 moves
     // int start[] = {7,8,4,11,12,14,10,15,16,5,3,13,2,1,9,6}; // 50 moves
     // int start[] = {7,9,13,1,14,16,8,15,3,6,10,5,2,11,12,4}; // 58 moves
     // int start[] = {15,14,1,6,9,11,4,12,16,10,7,3,13,8,5,2}; // 52 moves
-    int start[] = {7,14,16,9,10,2,11,13,6,15,4,12,5,1,8,3}; // 54 moves
+    // int start[] = {7,14,16,9,10,2,11,13,6,15,4,12,5,1,8,3}; // 54 moves
     int arrlen = *(&start + 1) - start;
     #define BOARD_SIZE arrlen
     assert(isSolvable(start,BOARD_SIZE) == 1);
